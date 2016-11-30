@@ -1,0 +1,10 @@
+gravitacion.pdf : grafica.py a.dat
+	python grafica.py
+
+a.dat : a.out
+	./a.out > a.dat
+
+a.out : gravedad.c
+	gcc gravedad.c -lm
+
+

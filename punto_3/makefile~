@@ -1,0 +1,9 @@
+poblacion:poblacion.pdf
+	evince poblacion.pdf
+poblacion.pdf: grafica.py a.dat
+		python grafica.py
+a.dat:a.out
+	./a.out>a.dat
+a.out:poblacion.c
+	gcc poblacion.c -lm
+

@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import corner
+
+datos=np.genfromtxt("a.dat")
+#X=datos[:,0]
+#Y=datos[:,1]
+
+#plt.scatter(X,Y)
+#plt.savefig("epicentro.pdf")
+#plt.close(
+
+
+figure = corner.corner(datos,labels=[r"$x$", r"$y$", r"$\Gamma \, [\mathrm{parsec}]$"],quantiles=[0.16, 0.5], show_titles=True ,title_kwargs={"fontsize": 12})
+
+figure.savefig("sismos.png")
