@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#define N (int)(7000)
+#define N (int)(3000)
 #define delta 0.1
 #define PI 3.14159265359
 #define PI2 pow(PI,2)
